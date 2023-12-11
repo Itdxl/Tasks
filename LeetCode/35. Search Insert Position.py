@@ -2,35 +2,25 @@
 
 # You must write an algorithm with O(log n) runtime complexity.
 
-  
 
-# Example 1:
+nums = [1,3,5,6]
+target = 2
 
-# Input: nums = [1,3,5,6], target = 5
-# Output: 2
-# Example 2:
-
-# Input: nums = [1,3,5,6], target = 2
-# Output: 1
-# Example 3:
-
-# Input: nums = [1,3,5,6], target = 7
-# Output: 4
 
 # just binary
-def Search(array, target):
+def Search(nums, target):
     left = 0
-    right = len(array) - 1
-    while left < right:
+    right = len(nums) - 1
+    while left <= right:
         mid = (left + right) // 2
-        item = array[mid]
-        if target == item:
+        if nums[mid] == target:
             return mid
-        if item > target:
+        elif nums[mid] > target:
             right = mid - 1
         else:
             left = mid + 1
-        return None
+    return left # returning left cause we need to find index where number would be if not in given array
+
     
 
 nums = list(map(int, input().split()))
