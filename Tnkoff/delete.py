@@ -1,7 +1,7 @@
-s = 'aasaassaf'
-two = []
-for symb in s:
-    two.append(symb)
+tuple = (1, 2 , ['a', 'b'])
 
-print(two)
+sth = ['c','c', 'c', 'c','c','c','c', 'c', 'c','c','c','c', 'c', 'c','c','c','c', 'c', 'c','c','c','c', 'c', 'c','c','c']
 
+for i in sth:
+    tuple[2].append(i)
+print(tuple)
