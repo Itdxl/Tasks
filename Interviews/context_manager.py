@@ -1,14 +1,14 @@
+import os
 def process(file_name):
+    current_directory = os.getcwd()
+    full_path = os.path.join(current_directory, file_name)
     
 # Файл автоматически закрывается при выходе из блока with
-    with open(file_name, 'r') as file:
+    with open(full_path, 'r') as file:
         for line in file:
             print(line)
         
-    
-
-
-process('data.txt')
+process('Interviews/data.txt')
 
 # Менеджеры контекста в Python представляют собой конструкцию языка, предназначенную для облегчения управления ресурсами, такими как
 # файлы, сетевые соединения или базы данных. Они используются с использованием ключевого слова with и предоставляют чистый и
