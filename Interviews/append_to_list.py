@@ -13,3 +13,11 @@ string = 'sth'
 result = change_list(numbers, string)
 print(result)
 
+
+
+from abc import ABC, abstractmethod
+
+class MyInterface(ABC):
+    @abstractmethod
+    def do_something(self):
+        pass

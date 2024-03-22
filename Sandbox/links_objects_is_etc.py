@@ -54,7 +54,3 @@
 # # Связываем их друг с другом
 # node1.next = node2
 # node2.next = node1 
-numbers = [1, 2, 3, 4]
-squared = list(map(lambda x: x * x, numbers))
-
-print(squared)

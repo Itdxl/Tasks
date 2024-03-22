@@ -24,3 +24,18 @@ class Plane(AbsractExample):
     def move(self):
         return f"Скорость равна {self.speed} "
     
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    @classmethod
+    def from_birth_year(cls, name, birth_year):
+        age = 2024 - birth_year
+        return cls(name, age)
+
+person1 = Person('Alice', 25)
+person2 = Person.from_birth_year('Bob', 1990)
+
+
