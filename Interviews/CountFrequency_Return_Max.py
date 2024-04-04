@@ -4,7 +4,6 @@ from collections import Counter
 nums = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
 # not optimal, cause anyway needs counter or search by value required
 def count_frequency1(nums):
-    
     dict = {}
     for num in nums:
         if num in dict:
@@ -34,4 +33,3 @@ def count_frequency2(nums):
 result= count_frequency2(nums)
 
 print(result)
-

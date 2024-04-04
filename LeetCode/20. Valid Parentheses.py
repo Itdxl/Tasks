@@ -1,7 +1,7 @@
 # def isValid(self, s: str) -> bool:
 #     strs = s.split()
 
-
+# НЕ СДЕЛАНА
 
 
 s = "()"

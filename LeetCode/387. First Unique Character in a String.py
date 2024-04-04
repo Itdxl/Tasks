@@ -9,10 +9,9 @@ def firstUniqChar(s: str) -> int:
         else:
             numbers[letter] = index
             
-    return 
+    return # НЕ ЗАКОНЧЕНА
 
 s = 'loveleetcode'
 result = firstUniqChar(s)
 print(result)
-
 
